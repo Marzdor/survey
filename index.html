@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <h1 id="title">Survey</h1>
+        <p id="description">Let us know how we can improve freeCodeCamp</p>
+        <form id="survey-form" action="">
+            <div id="info">
+                <label id="name-label" for="name">Name: </label>
+                <input id="name" name="name" type="text" placeholder="Billy" required>
+                <label id="email-label" for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="Billy@email.zam" required>
+                <label id="number-label" for="age">Age: </label>
+                <input id="number" name="age" type="number" placeholder="5" required min="1" max="100">
+                <label id="dropdown-label" for="skill">Which option best describes your current role?</label>
+                <select name="skill" id="dropdown" required>
+                    <option value="student">Student</option>
+                    <option value="fulltimej">Full Time Job</option>
+                    <option value="fulltimel">Full Time Learner</option>
+                    <option value="notsay">Perfer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="recommend">How likely is that you would recommend freeCodeCamp to a friend?</label>
+                <label>
+                    <input type="radio" name="rate" value="d">Definitely
+                </label>
+                <label>
+                    <input type="radio" name="rate" value="m">Maybe
+                </label>
+                <label>
+                    <input type="radio" name="rate" value="n">Not sure
+                </label>
+            </div>
+            <div>
+                <label>Things that should be improved in the future (Check all that apply)</label>
+                <label>
+                    <input type="checkbox" value="front">Front-end Projects
+                </label>
+                <label>
+                    <input type="checkbox" value="back">Back-end Projects
+                </label>
+                <label>
+                    <input type="checkbox" value="data">Data Visualization
+                </label>
+            </div>
+            <label for="comment">Any Comments or Suggestions?</label>
+            <textarea cols="10" rows="10"></textarea>
+            <input id="submit" type="submit">
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+#main {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #d8d7d5;
+}
+
+body {
+    background-color: #d8d7d5;
+}
+
+#survey-form {
+    display: grid;
+    grid-row-gap: 25px;
+}
+
+#info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px 20px;
+}
+
+textarea {
+    resize: none;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#submit {
+    width: 25%;
+    height: 50px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+#name {
+    justify-self: start;
+}
+
+#name-label {
+    justify-self: end;
+}
+
+#email {
+    justify-self: start;
+}
+
+#email-label {
+    justify-self: end;
+}
+
+#number {
+    justify-self: start;
+}
+
+#number-label {
+    justify-self: end;
+}
+
+#dropdown {
+    justify-self: start;
+}
+
+#dropdown-label {
+    justify-self: end;
+}
