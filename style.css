@@ -1,67 +1,74 @@
-#main {
-    width: 60%;
-    margin: 0 auto;
-    text-align: center;
-    background-color: #d8d7d5;
+@media(min-width: 320px) {
+    body {
+        background-color: #d8d7d5;
+    }
+    textarea {
+        resize: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #main {
+        margin: 0 auto;
+        text-align: center;
+        background-color: #d8d7d5;
+    }
+    #survey-form {
+        display: grid;
+        grid-row-gap: 25px;
+    }
+    #info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px 20px;
+    }
+    #submit {
+        width: 40%;
+        height: 50px;
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin: 0 auto;
+    }
+    #name {
+        justify-self: start;
+    }
+    #name-label {
+        justify-self: end;
+    }
+    #email {
+        justify-self: start;
+    }
+    #email-label {
+        justify-self: end;
+    }
+    #number {
+        justify-self: start;
+    }
+    #number-label {
+        justify-self: end;
+    }
+    #dropdown {
+        justify-self: start;
+        height: 25px;
+    }
+    #dropdown-label {
+        justify-self: end;
+    }
+    .selections {
+        display: block;
+    }
 }
 
-body {
-    background-color: #d8d7d5;
-}
-
-#survey-form {
-    display: grid;
-    grid-row-gap: 25px;
-}
-
-#info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px 20px;
-}
-
-textarea {
-    resize: none;
-    width: 60%;
-    margin: 0 auto;
-}
-
-#submit {
-    width: 25%;
-    height: 50px;
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin: 0 auto;
-}
-
-#name {
-    justify-self: start;
-}
-
-#name-label {
-    justify-self: end;
-}
-
-#email {
-    justify-self: start;
-}
-
-#email-label {
-    justify-self: end;
-}
-
-#number {
-    justify-self: start;
-}
-
-#number-label {
-    justify-self: end;
-}
-
-#dropdown {
-    justify-self: start;
-}
-
-#dropdown-label {
-    justify-self: end;
+@media(min-width: 1024px) {
+    textarea {
+        width: 60%;
+    }
+    #main {
+        width: 60%;
+    }
+    #dropdown {
+        height: auto;
+    }
+    #submit {
+        width: 25%;
+    }
 }
